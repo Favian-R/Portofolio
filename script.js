@@ -45,7 +45,7 @@ async function loadComments() {
     listContainer.innerHTML = '<p>Loading messages...</p>';
 
     try {
-      const response = await fetch(`${API_URL}?select=*`, {
+        const response = await fetch(`${API_URL}?select=*`, {
             method: 'GET',
             headers: API_HEADERS
         });
